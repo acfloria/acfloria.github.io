@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Personal Webpage of Florian Achermann" />
+        <meta name="author" content="Florian Achermann" />
+
+        <title>Florian Achermann's Webpage</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger scrollfade" style="opacity:0" href="#page-top">Florian Achermann</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#teach">Teaching</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header>
+            <div class="cover text-center" style="position:relative; top:max(10vh,60px);">
+              <h1 class="title-name">Florian Achermann</h1>
+              <p class="title-description">AI & Aerial Robotics Researcher</p>
+              <a href="mailto:acfloria@ethz.ch" target="_blank" class="fa fa-envelope fa-2x" style="padding-left:10px;padding-right:10px;"></a>
+              <a href="https://www.linkedin.com/in/florian-achermann-075924b2" target="_blank" class="fa fa-linkedin fa-2x" style="padding-left:10px;padding-right:10px;"></a>
+              <a href="https://scholar.google.com/citations?user=tUES6woAAAAJ&hl=en" target="_blank" class="ai ai-google-scholar ai-2x" style="padding-left:10px;padding-right:10px;"></a>
+              <a href="https://github.com/acfloria" target="_blank" class="fa fa-github fa-2x" style="padding-left:10px;padding-right:10px;"></a>
+            </div>
+      </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2><i class="fa fa-id-card-o fa-1x"></i> About me</h2>
+          <p>Hi, I'm Florian. At the moment I am a Senior Researcher in the <a href="http://www.asl.ethz.ch" target="_blank">Autonomous Systems Lab</a> (ASL) at <a href="http://www.ethz.ch" target="_blank">ETH Z&uuml;rch</a>, Switzerland lead by Prof. Roland Siegwart. In this lab I also completed my PhD in Robotics in Summer 2022. I did both my Bachelors study in Mechanical Engineering and Masters in Robotics, Systems, and Control at ETH Z&uuml;rch with a year long internship at Rapyuta Robotics first in Z&uuml;rch and in Tokyo during my Masters.</p>
+<p>During my stay at the ASL I mostly worked with small fixed-wing and hybrid UAVs on path planning, state estimation, and perception to increase the autonomy of these drones in the real world. We worked towards the vision of enabling these drone to autonomously navigate in alpine environments in a safe and efficient manner. A list of <a href="#projects">projects</a> and the corresponding <a href="#publications">publications</a> can be found further below.</p>
+<p>In my spare time I enjoy hiking up mountains, exploring other countries, or doing various sports. In my youth I competed in athletics (decathlon) and in recent years I have been playing ice hockey and participated in bobsleigh races as a pushman all across Europe. Occasionally I am also trying adventurous sports, such as combining bobsleigh and hockey by racing down a bobsleigh track on skates. I am also an assistant coach/team manager for the Floorball Uri Womens team in the NLB for the last four years.</p>
+
+          <table style="width:100%;"><col style="width:50%;"><col style="width:50%">
+            <tr>
+              <td style="vertical-align:top"><a href="assets/bvlos_celebration.jpeg" target="_blank"><img class="tile-img" src="assets/bvlos_celebration.jpeg" style="width:100%"></a></td>
+              <td style="vertical-align:top"><a href="assets/travelling.png" target="_blank"><img class="tile-img" src="assets/travelling.png" style="width:100%"></a></td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top"><a href="assets/bobsleigh.png" target="_blank"><img class="tile-img" src="assets/bobsleigh.png" style="width:100%"></a></td>
+              <td style="vertical-align:top"><a href="assets/bobrunskating.png" target="_blank"><img class="tile-img" src="assets/bobrunskating.png" style="width:100%"></a></td>
+            </tr>
+          </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects section-->
+        <section class="bg-light" id="projects">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2><i class="fa fa-cogs fa-1x"></i> Projects</h2>
+                        <p class="lead">List here all the projects</p>
+
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Predicting the Weather</h4>
+          <p>The steep terrain in alpine environments can cause strong up- and downdrafts or high wind magnitudes due to channeling. These winds can significantly impact the flight performance of small UAVs, even potentially causing crashes if exceeding the aircrafts flight envelope such as cruise speed or climb- and sinkrate. The goal of the project was to enable real-time volumetric wind field predictions around the UAV to enable planning for safer and more efficient flight paths. We trained a fully convolutional neural network "WindSeer" predicting the 3D wind flow and expected turbulence levels solely based on the known topography and few onboard wind observations. Using RANS-CFD simulations we generated the label flows to train the network. We then evaluated the model on held back CFD data but also on real wind measurements from UAVs and static measurement masts.</p>
+
+          <table style="width:100%;"><col style="width:50%;"><col style="width:50%">
+            <tr>
+              <td style="vertical-align:top"><a href="assets/project_Windprediction.png" target="_blank"><img class="tile-img" src="assets/project_Windprediction.png" style="width:100%"></a></td>
+              <td style="vertical-align:top">  <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/SRKmbexGg3U" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
+            </tr>
+          </table>
+
+
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Project Altair</h4>
+          <p>A major factor restricting the utility of UAVs is the amount of energy aboard, which limits the duration of their flights. Birds face largely the same problem, but they are adept at using their vision to aid in spotting — and exploiting — opportunities for extracting extra energy from the air around them. Within the project we developed infrared (IR) sensing techniques for detecting and mapping naturally occurring atmospheric phenomena called thermals based on a heatmap on the ground for extending the flight endurance of fixed-wing UAVs. Furthermore, we trained a neural network to detect small distortions on a single grayscale image caused by temperature gradients in the air. Detecting these so called "schlieren" could be used in the future to directly observing the thermal updraft column using an simple camera onboard an UAV.</p>
+
+          <table style="width:100%;"><col style="width:50%;"><col style="width:50%">
+            <tr>
+              <td style="vertical-align:top"><a href="assets/project_ALTAIR.png" target="_blank"><img class="tile-img" src="assets/project_ALTAIR.png" style="width:100%"></a></td>
+              <td style="vertical-align:top">  <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/nFjIrbYO77E" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
+            </tr>
+          </table>
+
+
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Avalmapper</h4>
+          <p>Snow avalanches kill, on average, 22 people per year in the Swiss Alps alone. This makes them the most deadly natural hazard, responsible for more than one third of all natural hazard fatalities. The main source of information on avalanche hazard in Switzerland for authorities, safety personnel of ski resorts and traffic lines, as well as the public, is the avalanche bulletin of the <a href="https://www.wsl.ch/en/about-wsl/locations/slf-davos/" target="_blank">WSL</a> Institute for Snow and Avalanche Research SLF. The goal within <a href="https://avalmapper.ethz.ch/" target="_blank">Avalmapper</a> is to map avalanche activities with a UAV providing more and higher resolution information to enable better avalanche bulletins. We developed active mapping algorithms together with wind aware planners to allow safe and efficient mapping of avalanches in alpine environments to allow the drones to navigate and map avalanches in these harsh environments.</p>
+
+          <table style="width:100%;"><col style="width:50%;"><col style="width:50%">
+            <tr>
+              <td style="vertical-align:top"><a href="assets/project_Avalmapper.png" target="_blank"><img class="tile-img" src="assets/project_Avalmapper.png" style="width:100%"></a></td>
+              <td style="vertical-align:top">  <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/7C5SsRn_L5Q" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
+            </tr>
+          </table>
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Solar<sup>3</h4>
+          <p>Within large fields the crop and soil state can vary, thus without the appropriate information this leads certain parts of the fields to be over-/under fertilized or to wasted water. Within <a href="https://business.esa.int/projects/solar" target="_blank">Solar<sup>3</a> the goal was to develop a remote sensing platform observing fields which would enable our project partner <a href="http://www.gamaya.com" target="_blank">Gamaya</a> build a decision support system for the farmers for more sustainable smart farming. Our part of the project was to develop the remote sensing platform SenseSoar2. It is a catapult launched solar-powered fixed-wing UAV capable of flying up to 300km in 6 hours. We prioritized developing an easy to use platform which was successfully validated by our project partners operating 20 BVLOS flights in Ukraine monitoring large fields over the summer 2019.
+
+          <table style="width:100%;"><col style="width:50%;"><col style="width:50%">
+            <tr>
+              <td style="vertical-align:top"><a href="assets/project_solar3.png" target="_blank"><img class="tile-img" src="assets/project_solar3.png" style="width:100%"></a></td>
+              <td style="vertical-align:top">  <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/kVekgE7iRMM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
+            </tr>
+          </table>
+
+
+          <!-- Next entry -->
+          <hr />
+          <h4>BVLOS flight over Lake Neuch&acirc;tel</h4>
+          <p>We demonstrated the first networked long distance beyond visual line of sight (BVLOS) flight in Switzerland with SenseSoar2, the UAV developed as part of the Solar<sup>3 project. With the project partners Swisscom, <a href="https://www.v2sky.ch/" target="_blank">v2sky</a>, and <a href="https://www.involi.com/" target="_blank">Involi</a> we got the permission from BAZL to fly from Orges to Bellechasse over the Lake Neuch&acirc;tel and on January 6th 2019 we successfully executed the mission.</p>
+
+          <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/ks-TiJP3dxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Collaborative Transport with Hybrid UAVs</h4>
+          <p>Multiple small drones can transport much heavier payloads than a single drone can by itself. While this concept has been extensively studies for multicopter UAVs we explored this concept for hybrid UAVs. Such drones can travel much longer distances compared to multicopter drones but pose some challenges due to the limited maneuverability in cruise flight and the transition from hover to cruise. In this project we developed safe guidance laws and control algorithms to enable collaborative payload transport with two hybrid UAVs.</p>
+          
+          <div style="text-align: center;">
+            <a href="assets/project_CollaborativeTransport.png" target="_blank"><img class="tile-img" src="assets/project_CollaborativeTransport.png" style="width:50%"></a>
+          </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications section-->
+        <section id="publications">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2><i class="fa fa-university fa-1x"></i> Publications</h2>
+                        <p>See publication metrics on <a href="https://scholar.google.com/citations?user=tUES6woAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+          
+          <!-- DISSERTATION -->
+          <hr />
+          <h4  id="paper-phdthesis">Dissertation</h4>
+
+          <table class="table-margin" style="width:100%;"><col style="width:110px;"><col style="width:15px;"><col>
+            <!-- Next entry -->
+            <tr>
+              <td style="vertical-align:top"><img src="assets/thesis_cover.png" class="pub-left-img"></td>
+              <td></td>
+              <td style="vertical-align:top">
+                <p class="tight"><u>F. Achermann</u>. &quot;<b>Perceiving the air for safer and more efficient fixed-wing UAV flights</b>&quot;. <em>Doctoral Thesis, ETH Z&uuml;rich</em>. 2022.</p>
+                <p><a href="pdf/florian_achermann_phdthesis.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> pdf</a> | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/586769" target="_blank">ETH Research Collection</a></p>
+              </td>
+            </tr>
+          </table>
+                       
+          <!-- JOURNAL PAPERS -->
+          <hr />
+          <h4>Journal Papers</h4>
+
+          <table class="table-margin" style="width:100%;"><col style="width:50px;"><col>
+
+            <!-- Next entry -->
+            <tr id="paper-achermann2024">
+              <td style="vertical-align:top">
+                <p>2024</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight"><u>Florian Achermann</u>, Thomas Stastny, Bogdan Danciu, Andrey Kolobov, Jen Jen Chung, Roland Siegwart, Nicholas Lawrance &quot;<b>WindSeer: Real-time volumetric wind prediction over complex terrain aboard a small UAV</b>&quot;. <em>Nature Communications</em>. | <a href="https://arxiv.org/abs/2401.09944" target="_blank"><i class="ai ai-arxiv"></i> arxiv</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-lim2024">
+              <td style="vertical-align:top">
+                <p>2024</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Jaeyoung Lim, <u>Florian Achermann</u>, Rik Girod, Nicholas Lawrance, Roland Siegwart &quot;<b>Safe Low-Altitude Navigation in Steep Terrain with Fixed-Wing Aerial Vehicles</b>&quot;. <em>IEEE Robotics and Automation Letters</em>. | <a href="https://arxiv.org/abs/2401.04831" target="_blank"><i class="ai ai-arxiv"></i> arxiv</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-jeger2023">
+              <td style="vertical-align:top">
+                <p>2023</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Simon L Jeger, Nicholas Lawrance, <u>Florian Achermann</u>, Oscar Pang, Mirko Kovac, Roland Y Siegwart &quot;<b>Reinforcement Learning for Outdoor Balloon Navigation: A Successful Controller for an Autonomous Balloon</b>&quot;. <em>IEEE Robotics & Automation Magazine</em>. | <a href="https://ieeexplore.ieee.org/document/10146448" target="_blank"><i class="ai ai-archive"></i> IEEEXplore</a></p>
+              </td>
+            </tr>
+
+          </table>
+          <hr />
+
+          <h4>Conference Papers</h4>
+          <table class="table-margin" style="width:100%;"><col style="width:50px;"><col>
+
+            <!-- Next entry -->
+            <tr id="paper-achermann2024icra">
+              <td style="vertical-align:top">
+                <p>2024</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight"><u>Florian Achermann</u>, Julian Andreas Haug, Tobias Zumsteg, Nicholas Lawrance, Jen Jen Chung, Andrey Kolobov, Roland Siegwart &quot;<b>Watching the Air Rise: Learning-Based Single-Frame Schlieren Detection</b>&quot;. <em>IEEE International Conference on Robotics and Automation (ICRA)</em>.
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-lim2023activemapping">
+              <td style="vertical-align:top">
+                <p>2023</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Jaeyoung Lim, Nicholas Lawrance, <u>Florian Achermann</u>, Thomas Stastny, Rik Bähnemann, Roland Siegwart &quot;<b>Fisher Information Based Active Planning for Aerial Photogrammetry</b>&quot;. <em>IEEE International Conference on Robotics and Automation (ICRA)</em>. | <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/617407/ICRA23_3007_FI.pdf?sequence=1" target="_blank"><i class="ai ai-open-access
+"></i> ETH Research Collection</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-lim2023dubins">
+              <td style="vertical-align:top">
+                <p>2023</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Jaeyoung Lim, <u>Florian Achermann</u>, Rik Girod, Nicholas Lawrance, Roland Siegwart &quot;<b>Circling Back: Dubins set Classification Revisited</b>&quot;. <em>IEEE Robotics & Automation Magazine</em>. | <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/615185" target="_blank"><i class="ai ai-open-access"></i> ETH Research Collection</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-achermann2021">
+              <td style="vertical-align:top">
+                <p>2023</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight"><u>Florian Achermann</u>, Andrey Kolobov, Debadeepta Dey, Timo Hinzmann, Jen Jen Chung, Roland Siegwart, Nicholas Lawrance &quot;<b>MultiPoint: Cross-spectral registration of thermal and optical aerial imagery</b>&quot;. <em>Conference on Robot Learning (CORL)</em>. | <a href="https://proceedings.mlr.press/v155/achermann21a/achermann21a.pdf" target="_blank"><i class="ai ai-open-access"></i> Proceedings of Machine Learning Research</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-phillips2021">
+              <td style="vertical-align:top">
+                <p>2021</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Trevor Phillips, Maximilian Stölzle, Erick Turricelli, <u>Florian Achermann</u>, Nicholas Lawrance, Roland Siegwart, Jen Jen Chung &quot;<b>Learn to Path: Using neural networks to predict Dubins path characteristics for aerial vehicles in wind</b>&quot;. <em>IEEE International Conference on Robotics and Automation (ICRA)</em>. | <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/515766/1/Phillips2021learn.pdf" target="_blank"><i class="ai ai-open-access"></i> ETH Research Collection</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-aufdermaur2021">
+              <td style="vertical-align:top">
+                <p>2021</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Pascal Auf der Maur, Betim Djambazi, Yves Haberthür, Patricia Hörmann, Alexander Kübler, Michael Lustenberger, Samuel Sigrist, Oda Vigen, Julian Förster, <u>Florian Achermann</u>, Elias Hampp, Robert K Katzschmann, Roland Siegwart &quot;<b>RoBoa: Construction and evaluation of a steerable vine robot for search and rescue applications</b>&quot;. <em>International Conference on Soft Robotics (RoboSoft)</em>. | <a href="https://arxiv.org/pdf/2203.15145.pdf" target="_blank"><i class="ai ai-open-access"></i> arxiv</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-achermann2019">
+              <td style="vertical-align:top">
+                <p>2019</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight"><u>Florian Achermann</u>, Nicholas RJ Lawrance, René Ranftl, Alexey Dosovitskiy, Jen Jen Chung, Roland Siegwart &quot;<b>Learning to predict the wind for safe aerial vehicle planning</b>&quot;. <em>IEEE International Conference on Robotics and Automation (ICRA)</em>. | <a href="https://ieeexplore.ieee.org/document/8793547" target="_blank"><i class="ai ai-archive"></i> IEEEXplore</a></p>
+              </td>
+            </tr>
+
+            <!-- Next entry -->
+            <tr id="paper-oettershagen2019">
+              <td style="vertical-align:top">
+                <p>2019</p>
+              </td>
+              <td style="vertical-align:top">
+                <p class="tight">Philipp Oettershagen, Benjamin Müller, <u>Florian Achermann</u>, Roland Siegwart &quot;<b>Real-time 3D wind field prediction onboard UAVs for safe flight in complex terrain</b>&quot;. <em>IEEE Aerospace Conference</em>. | <a href="https://ieeexplore.ieee.org/abstract/document/8742160" target="_blank"><i class="ai ai-archive"></i> IEEEXplore</a></p>
+              </td>
+            </tr>
+
+          </table>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+  <section id="teach" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2><i class="fa fa-graduation-cap fa-1x"></i> Teaching &amp; Mentorship</h2>
+          <hr />
+          <h3 style="text-align:left" id="teach-proj">Focus Projects</h3>
+          <p>During the 3rd year in their bachelor studies a team of 8-10 mechanical and electrical engineering students are developing a robot from A-Z. They are given an open task and are learning how to structure problems and identifying solutions to them. They will develop a prototype for the given task and present it at a public event at the end of the year. During my stay at the ASL I coached over the years three teams. I supported the teams in weekly meetings guiding them through the process of developing and building the prototypes. </p>
+          <!-- Next entry -->
+          <hr />
+          <h4>CitoLibra</h4>
+          <p class="tight">The student team was tasked to develop a gyro-stabilized ground ground robot. They decided to develop a two-wheeled dual-steered bike stabilized with custom developed gyroscope units. This design has the advantage of a small footprint and the gyroscopes allow it to drive at any speed stably. They implemented the required state estimation and control algorithms to pass a test parcour at the end of the project (more info <a href="https://citolibra.ethz.ch/" target="_blank">here</a>). </p>
+          <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/Fz-41y_0Mhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Roboa</h4>
+          <p class="tight"> The student team was given the goal to build a soft robot for search and rescue overcoming some of the limitation of the previous focus project Proboscis. They developed a soft vine robot with a novel steering mechanism that grows, thus limits the friction with the environment. They successfully demonstrated the deployment of the robot on test sites at the end of the year. The team is continuing developing the prototype and launched a startup (more info <a href="https://www.roboa.ch/" target="_blank">here</a>). </p>
+          <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/ULm-Xc9jbyY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+          <!-- Next entry -->
+          <hr />
+          <h4>Proboscis</h4>
+          <p class="tight">The student team developed a robot that can go into narrow spaces for a potential search and rescue application. They explored various designs and in the end converged to an elephant trunk like robot capapable driven by custom made driving units (more info <a href="https://proboscis.ethz.ch/" target="_blank">here</a>). </p>
+          <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/lXjupN7hRJs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+          <hr />
+          <h3 style="text-align:left" id="teach-theses">Supervised Student Theses, ETH Z&uuml;rich</h3>
+
+          <!-- Master Theses / / / / / / / / / / / / / / / / / /-->
+          <hr />
+          <p>During my time at ETH Z&uuml;rich I supervised various student theses. In total I supervised 46 student projects, specifically:</p>
+          <ul>
+             <li>16 Masters Theses</li>
+             <li>11 Semester Projects</li>
+             <li>13 Bachelor Theses</li>
+             <li>6 Seminar Computational Science and Engineering (CSE) in Robotics</li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Florian Achermann 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
